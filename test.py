@@ -8,7 +8,7 @@
 docker run -dit \
 -p 5432:5432 \
 -p 80:80 \
--v "/root/db:/docker-entrypoint-initdb.d" \
+-v "/root/pwdpsql/db:/docker-entrypoint-initdb.d" \
 --name db \
 -e POSTGRES_USER=postgres \
 -e POSTGRES_PASSWORD=pointofsale \
